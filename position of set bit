@@ -1,0 +1,5 @@
+class Solution:
+    def findPosition(self,n):
+        if n <= 0 or (n & (n - 1)) != 0:
+            return -1
+        return (n.bit_length() - 1) + 1
